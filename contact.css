@@ -1,0 +1,13 @@
+:root {
+  --textAlt: #A3CFCF;
+  --bg: #68A6A6;
+  --accent: #D2FAFA;
+  --accent2: #387A7A;
+  --accent3: #174F4F;
+  --accent4: #063333;
+  --text5: #07f6c6;
+} body {
+  background: linear-gradient(180deg, var(--accent4), var(--bg));
+  color: var(--textAlt);
+  font-family: 'Times New Roman', Times, serif;
+}
