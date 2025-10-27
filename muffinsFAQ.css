@@ -52,6 +52,15 @@
 .card {
   border: 4px var(--accent3) solid;
   border-radius: 1rem;
-  max-width:max-content;
-  /* flex: 1 1 300px; */
+  max-width: 25rem;
+} a {
+    color: var(--textAlt);
+}  footer .images {
+  display: flex;
+  justify-content: right;
+  gap: 25px;
+} footer .texts{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
