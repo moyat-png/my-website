@@ -86,6 +86,9 @@ body {
   display: flex;
   justify-content: right;
   gap: 25px;
+} footer img{
+  height: 25px;
+  width: 25px;
 } footer .texts{
   display: flex;
   justify-content: center;

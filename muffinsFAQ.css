@@ -48,8 +48,7 @@
   gap: 25px;
   padding: 25px;
   flex-wrap: wrap;
-}
-.card {
+} .card {
   border: 4px var(--accent3) solid;
   border-radius: 1rem;
   max-width: 25rem;
@@ -59,6 +58,9 @@
   display: flex;
   justify-content: right;
   gap: 25px;
+} footer img{
+  width: 25px;
+  height: 25px;
 } footer .texts{
   display: flex;
   justify-content: center;
