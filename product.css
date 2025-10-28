@@ -13,4 +13,44 @@ body {
   background: linear-gradient(180deg, var(--accent4), var(--bg));
   color: var(--textAlt);
   font-family: 'Times New Roman', Times, serif;
+} header {
+  display: flex;
+  border: var(--text5) 4px solid;
+  border-radius: 1rem;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+} nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  margin-right: 1rem;
+  margin: 1rem;
+} a {
+  color: var(--textAlt);
+} .cardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px;
+  flex-wrap: wrap;
+  border: var(--text5);
+} .card {
+  flex: 1 1 450px;
+} .card img{
+  width: 250px;
+  height: 250px;
+} .productImages {
+  display: flex;
+  gap: 25px;
+  justify-content: right;
+} .productImages img {
+  width: 25px;
+  height: 25px;
+}.productTexts{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
