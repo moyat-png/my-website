@@ -21,12 +21,6 @@ body {
    display: flex;
   justify-content: space-around;
   align-items: center;
-} .homeNav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 15px;
-  margin-right: 1rem;
 } .homeLogo{
   display: flex;
   align-items: center;

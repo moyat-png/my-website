@@ -17,71 +17,46 @@ body {
   border: var(--text5) 4px solid;
   border-radius: 1rem;
   padding: 15px;
-} .homeHeader{ 
+} .aboutHeader{ 
    display: flex;
   justify-content: space-around;
   align-items: center;
-} .homeNav{
+} .aboutNav{
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 15px;
   margin-right: 1rem;
-} .homeLogo{
+} .aboutLogo{
   display: flex;
   align-items: center;
   margin-left: 1rem;
   width: 100px;
-}.homeNav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 15px;
-  margin-right: 1rem;   
 } a {
   color: var(--textAlt);
   font-size: x-large;
-}.break {
-  border: 4px solid var(--text5);
+} .aboutContent{
+  display: flex;
+  border: var(--text5) 4px solid;
+} .mission{
+  display: flex;
+  flex-direction: row;
+  border: var(--text5) 2px solid;
   border-top: none;
-  border-right: none;
   border-left: none;
   padding: 10px;
-} .homeCardContainer {
-    display: grid;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 25px;
-    /* align-content: space-between; */
-} .homeCardContainer .muffin-1 {
-    display: flex;
-    flex-direction: row;
-    border: 2px white dotted;
-    border-radius: 1rem;
-    justify-content: space-around;
-    padding: 25px;
-    margin: 25px;
-    background: linear-gradient(180deg, var(--accent4), var(--accent))
-} .homeCardContainer .muffin-2 {
-    display: flex;
-    flex-direction: row;
-    border: 2px white dotted;
-    border-radius: 1rem;
-    justify-content: space-around;
-    color: var(--accent3);
-    padding: 25px;
-    margin: 25px;
-    background: linear-gradient(180deg, var(--accent), var(--accent2))
-}  .homeCardContainer .muffin-3 {
-    display: flex;
-    flex-direction: row;
-    border: 2px white dotted;
-    border-radius: 1rem;
-    justify-content: space-around;
-    color: var(--text5);
-    padding: 25px;
-    margin: 25px;
-    background: linear-gradient(180deg, var(--accent2), var(--bg))
+} .team{
+  display: flex;
+  flex-direction: row;
+  border: var(--text5) 2px solid;
+  border-top: none;
+  border-right: none;
+  padding: 10px;
+} .teamImage{
+  display: flex;
+  width: 250px;
+  height: 250px;
+  flex-direction: row;
 } footer .images {
   display: flex;
   justify-content: right;
