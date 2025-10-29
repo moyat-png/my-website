@@ -66,3 +66,78 @@ body {
   justify-content: center;
   gap: 25px;
 }
+
+/* Responsive styles for tablets (iPad) */
+@media (max-width: 900px) and (min-width: 481px) {
+  .aboutHeader, .aboutNav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .aboutLogo {
+    width: 80px;
+    margin-left: 0;
+  }
+  .aboutContent {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .mission, .team {
+    flex-direction: column;
+    padding: 8px;
+  }
+  .teamImage {
+    width: 150px;
+    height: 150px;
+  }
+  footer .images {
+    justify-content: center;
+    gap: 15px;
+  }
+  footer .texts {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive styles for mobile devices (phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  #title {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+  .aboutHeader, .aboutNav {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .aboutLogo {
+    width: 60px;
+    margin-left: 0;
+  }
+  .aboutContent {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .mission, .team {
+    flex-direction: column;
+    padding: 5px;
+    font-size: 0.95rem;
+  }
+  .teamImage {
+    width: 90px;
+    height: 90px;
+  }
+  footer .images {
+    gap: 10px;
+  }
+  footer .texts {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+}
