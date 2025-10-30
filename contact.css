@@ -46,17 +46,29 @@
     margin: 0;
 } button{
   margin-left: 0.5rem;
-  width: 500px;
-  height: 50px;
-  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  height: 70px;
+  border-radius: 1.5rem;
   background-color: var(--accent4);
   color: var(--textAlt);
+  border: 2px solid var(--text5);
+  padding: 0 1rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
 } input{
-  width: 500px;
-  height: 50px;
-  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  height: 70px;
+  border-radius: 1.5rem;
   background-color: var(--accent4);
   color: var(--textAlt);
+  border: 2px solid var(--text5);
+  padding: 0 1rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
 } input::placeholder{
   color: var(--textAlt);
 } footer .images {
@@ -70,4 +82,78 @@
   display: flex;
   justify-content: center;
   gap: 25px;
+} input:focus, button:focus {
+  outline: none;
+  border-color: var(--accent2);
+  background-color: var(--accent3);
+} button {
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+} button:hover {
+  background-color: var(--accent2);
+  color: var(--accent4);
+  border-color: var(--textAlt);
+}
+
+/* Responsive styles for tablets (iPad) */
+@media (max-width: 900px) and (min-width: 481px) {
+  .contactHeader, .contactNav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contactLogo {
+    width: 80px;
+  }
+  footer .images {
+    justify-content: center;
+    gap: 15px;
+  }
+  footer .texts {
+    flex-direction: column;
+    gap: 10px;
+  }
+  button, input {
+    height: 50px;
+    font-size: 1.1rem;
+    max-width: 400px;
+    border-radius: 1rem;
+  }
+}
+
+/* Responsive styles for mobile devices (phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  #title {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+  .contactHeader, .contactNav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contactLogo {
+    width: 60px;
+    margin-left: 0;
+  }
+  .contactCardContainer {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+  footer .images {
+    gap: 10px;
+  }
+  footer .texts {
+    font-size: 0.9rem;
+    gap: 5px;
+  }
+  button, input {
+    height: 40px;
+    font-size: 1rem;
+    max-width: 300px;
+    border-radius: 0.7rem;
+  }
 }
