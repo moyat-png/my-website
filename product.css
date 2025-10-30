@@ -23,13 +23,15 @@ body {
   font-size: xx-large;
 } nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  font-size: x-large;
   gap: 15px;
   margin-right: 1rem;
   margin: 1rem;
 } a {
   color: var(--textAlt);
+} h3{
+  color: white;
 } .cardContainer {
   display: flex;
   justify-content: space-between;
@@ -53,4 +55,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
+} @media (max-width: 480px){
+  .card img{
+    width: 150px;
+  } h3 {
+    font-size: medium;
+  }
 }

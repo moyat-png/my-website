@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: x-large;
   gap: 15px;
   margin-right: 1rem;   
 } a {

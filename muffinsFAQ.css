@@ -29,6 +29,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: x-large;
   gap: 15px;
   margin-right: 1rem;
 } .faqLogo{
@@ -49,7 +50,6 @@
   padding: 25px;
   flex-wrap: wrap;
 } .card {
-  border: 4px var(--accent3) solid;
   border-radius: 1rem;
   max-width: 25rem;
 } a {
