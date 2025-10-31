@@ -78,12 +78,7 @@ body {
 
 /* Responsive styles for tablets (iPad) */
 @media (max-width: 900px) and (min-width: 481px) {
-  .aboutHeader, .aboutNav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .aboutLogo {
+.aboutLogo {
     width: 80px;
     margin-left: 0;
   }
@@ -94,17 +89,24 @@ body {
   .mission, .team {
     flex-direction: column;
     padding: 8px;
-  }
-  .teamImage {
+  } .mission{
+    border-right: none;
+    font-size: x-large;
+  } .team{
+    font-size: x-large;
+    border-left: none;
+    border-bottom: none;
+  } .teamImage {
     width: 150px;
     height: 150px;
   }
   footer .images {
-    justify-content: center;
+    justify-content: right;
     gap: 15px;
   }
   footer .texts {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     font-size: 1rem;
   }
@@ -122,7 +124,6 @@ body {
   .aboutHeader, .aboutNav {
     flex-direction: column;
     gap: 8px;
-    align-items: flex-start;
   }
   .aboutLogo {
     width: 60px;
@@ -136,6 +137,10 @@ body {
     flex-direction: column;
     padding: 5px;
     font-size: 0.95rem;
+  } .mission{
+    border-right: none;
+  } .team {
+    border-left: none;
   }
   .teamImage {
     width: 90px;
@@ -143,9 +148,11 @@ body {
   }
   footer .images {
     gap: 10px;
+    justify-content: center;
   }
   footer .texts {
     flex-direction: column;
+    align-items: center;
     gap: 5px;
     font-size: 0.9rem;
   }

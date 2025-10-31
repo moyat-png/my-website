@@ -67,3 +67,17 @@
   gap: 25px;
   
 }
+/* Mobile Media */
+@media (max-width:480px){
+  .faqNav{
+    align-items: center;
+    flex-direction: column;
+  } .faqLogo{
+    width: 10rem
+  } footer .images{
+    justify-content: center;
+  } footer .texts{
+    align-items: center;
+    flex-direction: column;
+  }
+}

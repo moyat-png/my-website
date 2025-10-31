@@ -47,36 +47,27 @@ body {
     flex-wrap: wrap;
     gap: 25px;
     padding: 25px;
-    /* align-content: space-between; */
 } .homeCardContainer .muffin-1 {
     display: flex;
     flex-direction: row;
-    /* border: 2px white dotted; */
-    /* border-radius: 1rem; */
     justify-content: space-around;
     padding: 25px;
     margin: 25px;
-    /* background: linear-gradient(180deg, var(--accent4), var(--accent)) */
+    gap: 10px;
 } .homeCardContainer .muffin-2 {
     display: flex;
     flex-direction: row;
-    /* border: 2px white dotted;
-    border-radius: 1rem; */
     justify-content: space-around;
-    /* color: var(--accent3); */
     padding: 25px;
     margin: 25px;
-    /* background: linear-gradient(180deg, var(--accent), var(--accent2)) */
+    gap: 10px;
 }  .homeCardContainer .muffin-3 {
     display: flex;
     flex-direction: row;
-    /* border: 2px white dotted;
-    border-radius: 1rem; */
     justify-content: space-around;
-    /* color: var(--text5); */
+    gap: 10px;
     padding: 25px;
     margin: 25px;
-    /* background: linear-gradient(180deg, var(--accent2), var(--bg)) */
 } footer .images {
   display: flex;
   justify-content: right;
@@ -89,20 +80,7 @@ body {
   justify-content: center;
   gap: 25px;
 }
-/* Media for XL devices */
- @media (min-width: 1201px){
-  .muffin-1 img{
-    width: 35rem;
-  } .muffin-2 img{
-    width: 35rem;
-  } .muffin-3 img{
-    width: 35rem;
-  } div {
-    gap: 15px;
-    font-size: xx-large;
-  }
- }
-  /*Media for large devices*/
+/*Media for large devices*/
  @media (min-width: 769px) and (max-width: 1200px){
   .muffin-1 img{
     width: 25rem;

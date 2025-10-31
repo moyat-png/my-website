@@ -100,7 +100,6 @@
 /* Responsive styles for tablets (iPad) */
 @media (max-width: 900px) and (min-width: 481px) {
   .contactHeader, .contactNav {
-    flex-direction: column;
     align-items: flex-start;
   }
   .contactLogo {
@@ -112,6 +111,7 @@
   }
   footer .texts {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
   button, input {
