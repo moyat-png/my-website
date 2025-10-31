@@ -14,6 +14,7 @@ body {
   color: var(--textAlt);
   font-family: 'Times New Roman', Times, serif;
 } #title {
+  display: flex;
   border: var(--text5) 4px solid;
   border-radius: 1rem;
   padding: 15px;
@@ -50,32 +51,32 @@ body {
 } .homeCardContainer .muffin-1 {
     display: flex;
     flex-direction: row;
-    border: 2px white dotted;
-    border-radius: 1rem;
+    /* border: 2px white dotted; */
+    /* border-radius: 1rem; */
     justify-content: space-around;
     padding: 25px;
     margin: 25px;
-    background: linear-gradient(180deg, var(--accent4), var(--accent))
+    /* background: linear-gradient(180deg, var(--accent4), var(--accent)) */
 } .homeCardContainer .muffin-2 {
     display: flex;
     flex-direction: row;
-    border: 2px white dotted;
-    border-radius: 1rem;
+    /* border: 2px white dotted;
+    border-radius: 1rem; */
     justify-content: space-around;
-    color: var(--accent3);
+    /* color: var(--accent3); */
     padding: 25px;
     margin: 25px;
-    background: linear-gradient(180deg, var(--accent), var(--accent2))
+    /* background: linear-gradient(180deg, var(--accent), var(--accent2)) */
 }  .homeCardContainer .muffin-3 {
     display: flex;
     flex-direction: row;
-    border: 2px white dotted;
-    border-radius: 1rem;
+    /* border: 2px white dotted;
+    border-radius: 1rem; */
     justify-content: space-around;
-    color: var(--text5);
+    /* color: var(--text5); */
     padding: 25px;
     margin: 25px;
-    background: linear-gradient(180deg, var(--accent2), var(--bg))
+    /* background: linear-gradient(180deg, var(--accent2), var(--bg)) */
 } footer .images {
   display: flex;
   justify-content: right;
@@ -88,53 +89,118 @@ body {
   justify-content: center;
   gap: 25px;
 }
-
-/* Responsive styles for tablets and below */
-@media (max-width: 900px) {
-  .homeHeader, .homeNav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .homeLogo {
-    width: 80px;
-  }
-  footer .images {
-    justify-content: center;
+/* Media for XL devices */
+ @media (min-width: 1201px){
+  .muffin-1 img{
+    width: 35rem;
+  } .muffin-2 img{
+    width: 35rem;
+  } .muffin-3 img{
+    width: 35rem;
+  } div {
     gap: 15px;
+    font-size: xx-large;
   }
-  footer .texts {
-    flex-direction: column;
+ }
+  /*Media for large devices*/
+ @media (min-width: 769px) and (max-width: 1200px){
+  .muffin-1 img{
+    width: 25rem;
+  } .muffin-2 img{
+    width: 25rem;
+  } .muffin-3 img{
+    width: 25rem;
+  } div {
+    gap: 15px;
+    font-size: x-large;
+  }
+ }
+/* Responsive styles for tablets and below */
+@media (min-width: 481px) and (max-width: 768px){
+  body {
+    font-size: 4px;
+  } #title {
+    font-size: 1.2rem;
+    padding: 8px;
+
+  }.homeHeader, .homeNav{
+    justify-content: center;
     gap: 10px;
+  }.homeLogo {
+    width: 60px;
+    margin-left: 0;
+  } div{
+    gap: 10px;
+    font-size: x-large;
+  }.homeCardContainer {
+    font-size: small;
+    flex-direction: wrap;
+    padding: 5px;
+    gap: 5px;
+  } .muffin-1 img{
+    width: 23rem;
+  } .muffin-2 img{
+    width: 23rem;
+  } .muffin-3 img{
+    width: 23rem;
+  } footer .images {
+    gap: 10px;
+    justify-content: center;
+  } footer .texts {
+    font-size: 0.9rem;
+    gap: 5px;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 /* Responsive styles for mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   body {
     font-size: 16px;
   }
   #title {
     font-size: 1.2rem;
     padding: 8px;
-  }
-  .homeHeader, .homeNav {
+    max-width: 480px;
+
+  }.homeHeader, .homeNav{
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
-  }
-  .homeLogo {
+  }.homeLogo {
     width: 60px;
     margin-left: 0;
-  }
-  .homeCardContainer {
-    grid-template-columns: 1fr;
-    padding: 10px;
+  } div{
+    gap: 5px;
+    font-size: large;
+  } .homeCardContainer {
+    font-size: small;
+    flex-direction: wrap;
+    padding: 5px;
+    gap: 5px;
+  } .homeCardContainer .muffin-1 {
+    border: none;
+    flex-direction: column;
+  } .homeCardContainer .muffin-2{
+    flex-direction: column;
+  } .homeCardContainer .muffin-3{
+    flex-direction: column;
+  } .muffin-1 img{
+    width: 19rem;
+  } .muffin-2 img{
+    width: 19rem;
+  } .muffin-3 img{
+    width: 19rem;
+  } footer .images {
     gap: 10px;
-  }
-  footer .images {
-    gap: 10px;
-  }
-  footer .texts {
+    justify-content: center;
+  } footer .texts {
     font-size: 0.9rem;
     gap: 5px;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
   }
 }
